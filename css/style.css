@@ -1,0 +1,113 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu li {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu li::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: #000;
+  margin: 2px;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.credential {
+  font-size: 2.4rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin: 8px auto;
+}
+
+.about h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.about h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin: 2px;
+}
+
+.about h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.portfolio-list h3,
+.designs-list h3 {
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.portfolio-list h3::after,
+.designs-list h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin: 2px;
+}
+
+.designs-list h3::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #000;
+  margin: 2px;
+}
+
+.contact h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
