@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -30,6 +31,7 @@
               </ul>
             </nav>
         </header>
+        <div>
         <h1>Patricia Steinberg</h1>
         <p class="credential">Front-end developer</p>
         <ul>
@@ -54,21 +56,20 @@
                 ><img src="img/home-github-btn.png" alt="GitHub Profile Page"
                 /></a>
             </li>
+        </div>
 
-            <div>
-                <a href="#about">More about me</a>
-            </div>
+        <div>
+            <a href="#about" class="btn">More about me</a>
+        </div>
     </section>
 
     <section class="about" id="about">
-        <div class="description">        
-            <h2>About me</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <img src="img/about-me-photo.png" alt="Website creator's photo">
-        </div>
+        <h2>About me</h2>
+        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <img src="img/about-me-photo.png" alt="Website creator's photo">
         <div>
             <h3>Main skills</h3>
-            <ul>
+            <ul class="skills">
                 <li>
                     <img src="img/about-js-icon.png" alt="JavaScript icon">
                     <h4>JavaScript</h4>
@@ -120,22 +121,22 @@
                 </li>
                 <li>
                     <a href="" target="_blank"><img src="" alt="Link to project 'Wildbeasts'"></a>
-                    <h3 class="portfolio-item-4">Wildbeasts</h3>
+                    <h3>Wildbeasts</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </li>
                 <li>
                     <a href="https://github.com/patriciasteinberg/bikcraft" target="_blank"><img src="" alt="Link to project 'Bikcraft'"></a>
-                    <h3 class="portfolio-item-5">Bikcraft</h3>
+                    <h3>Bikcraft</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </li>
                 <li>
                     <a href="" target="_blank"><img src="" alt="Link to project 'Project 6'"></a>
-                    <h3 class="portfolio-item-6">Project 6</h3>
+                    <h3>Project 6</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </li>
             </ul>
         </div>
-        <button class="btn-white">Go to GitHub</button>
+        <a class="btn-white" href="https://github.com/patriciasteinberg" target="_blank">Go to GitHub</a>
     </section>
 
     <section class="designs" id="designs">
@@ -164,7 +165,7 @@
                 </li>
             </ul>
         </div>
-        <button class="btn">Go to Behance</button>
+        <a class="btn" href="https://www.behance.net/patriciasteinberg" target="_blank">Go to Behance</a>
     </section>
 
     <section class="contact" id="contact">
@@ -187,6 +188,7 @@
     </section>
 
     <section class="social-media">
+        <h2>Social Media</h2>
         <ul>
             <li><a href="https://www.linkedin.com/in/patricia-steinberg-74a6b6177" target="_blank"><img src="img/social-media-linkedin.png" alt="LinkedIn Profile Page"></a></li>
             <li><a href="https://www.behance.net/patriciasteinberg" target="_blank"><img src="img/social-media-behance.png" alt="Behance Profile Page"></a></li>
@@ -198,6 +200,6 @@
         <p>Patricia Steinberg’s Portfolio 2021. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
