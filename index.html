@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -22,8 +23,8 @@
             <a href="index.html">
               <img src="img/home-logo.png" alt="Logo" />
             </a>
-            <nav class="menu">
-              <ul>
+            <nav>
+              <ul class="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">GitHub</a></li>
                 <li><a href="#designs">Behance</a></li>
@@ -34,7 +35,7 @@
         <div>
         <h1>Patricia Steinberg</h1>
         <p class="credential">Front-end developer</p>
-        <ul>
+        <ul class="home-icons">
             <li>
             <a
                 href="https://www.linkedin.com/in/patricia-steinberg-74a6b6177"
@@ -58,42 +59,46 @@
             </li>
         </div>
 
-        <div>
+        <div class="home-about-link">
             <a href="#about" class="btn">More about me</a>
         </div>
     </section>
 
     <section class="about" id="about">
         <h2>About me</h2>
-        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <img src="img/about-me-photo.png" alt="Website creator's photo">
+        <section class="about-me-flex">
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src="img/about-me-photo.png" alt="Website creator's photo">
+        </section>
         <div>
             <h3>Main skills</h3>
             <ul class="skills">
                 <li>
-                    <img src="img/about-js-icon.png" alt="JavaScript icon">
-                    <h4>JavaScript</h4>
+                    <div class="skills-subtitle">
+                        <img src="img/about-js-icon.png" alt="JavaScript icon">
+                        <h4>JavaScript</h4>
+                    </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <img src="img/about-html-css-icon.png" alt="HTML5 and CSS3 icons">
-                    <h4>HTML5 and CSS3</h4>
+                    <div class="skills-subtitle">
+                        <img src="img/about-html-css-icon.png" alt="HTML5 and CSS3 icons">
+                        <h4>HTML5 and CSS3</h4>
+                    </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <img src="img/about-react-icon.png" alt="React.js icon">
-                    <h4>React.js</h4>
+                    <div class="skills-subtitle">
+                        <img src="img/about-react-icon.png" alt="React.js icon">
+                        <h4>React.js</h4>
+                    </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <img src="img/about-git-icon.png" alt="Git icon">
-                    <h4>Version Control - Git</h4>
+                    <div class="skills-subtitle">
+                        <img src="img/about-git-icon.png" alt="Git icon">
+                        <h4>Version Control - Git</h4>
+                    </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </li>
             </ul>
@@ -136,7 +141,9 @@
                 </li>
             </ul>
         </div>
-        <a class="btn-white" href="https://github.com/patriciasteinberg" target="_blank">Go to GitHub</a>
+        <div>
+            <a class="btn-white" href="https://github.com/patriciasteinberg" target="_blank">Go to GitHub</a>
+        </div>
     </section>
 
     <section class="designs" id="designs">
@@ -149,7 +156,7 @@
                 </li>
                 <li>
                     <a href="https://www.behance.net/gallery/109940297/Bikcraft-Institution-Website" target="_blank"><img src="" alt="Link to design 'Bikcraft'"></a>
-                    <h3 class="designs-item">Animais Fantásticos</h3>
+                    <h3 class="designs-item">Bikcraft</h3>
                 </li>
                 <li>
                     <a href="" target="_blank"><img src="" alt="Link to design 'Project 3'"></a>
@@ -170,20 +177,30 @@
 
     <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form class="" action="https://" method="post" name="form">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email address</label>
-            <input type="text" name="email" id="email">
-            <label for="phone">Phone number</label>
-            <input type="text" name="phone" id="phone">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-            <button class="btn" id="send" name="send" type="submit">Send</button>
+        <form class="form" action="https://" method="post" name="form">
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="email">Email address</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="phone">Phone number</label>
+                <input type="text" name="phone" id="phone">
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+            </p>
+            <div>
+                <button class="btn" id="send" name="send" type="submit">Send</button>
+            </div>
         </form>
         <div>
             <h3>Find me on</h3>
-            <button><img src="img/contact-linkedin-icon.png" alt="LinkedIn Profile Page">LinkedIn</button>
+            <a href="https://www.linkedin.com/in/patricia-steinberg-74a6b6177/" class="btn" target="_blank"><img src="img/contact-linkedin-icon.png" alt="LinkedIn Profile Page">LinkedIn</a>
         </div>
     </section>
 
