@@ -246,6 +246,14 @@ h2::after {
   margin: 2px;
 }
 
+.designs {
+  padding: 1em 0 2.5em 0;
+}
+
+.designs-list {
+  margin-bottom: 3em;
+}
+
 .designs h2 {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -260,9 +268,20 @@ h2::after {
   margin: 2px;
 }
 
+.designs .btn {
+  margin-left: 45%;
+  margin-right: 47%;
+}
+
+.contact {
+  background: url("../img/contact-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 1em 0 2.5em 0;
+}
+
 .contact h2 {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .contact h3 {
@@ -270,8 +289,42 @@ h2::after {
   font-weight: 700;
 }
 
+.contact-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border: 3px solid #8c1414;
+  background: #f2cb05;
+  padding: 7px 10px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.form textarea {
+  display: block;
+  width: 100%;
+  border: 3px solid #8c1414;
+  background: #f2cb05;
+  padding: 7px 10px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
 .social-media ul {
   display: flex;
+  flex: wrap;
   justify-content: center;
 }
 
