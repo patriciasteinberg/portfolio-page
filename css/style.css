@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -217,16 +221,117 @@ h2::after {
   background: #fff;
 }
 
-.portfolio-list,
-.designs-list {
+.portfolio-list ul,
+.designs-list ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(18, 1fr);
   max-width: 1400px;
   margin: 0 auto;
-  grid-gap: 20px;
+  grid-gap: 30px;
+  padding: 10px;
 }
 
-.portfolio-list li p {
+.grid1,
+.grid2,
+.grid3,
+.grid4 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.grid1 li,
+.grid2 li,
+.grid3 li,
+.grid4 li {
+  height: 30vh;
+}
+
+.grid1 li p,
+.grid2 li p {
+  margin-left: 20%;
+}
+
+.grid1 li h3::after {
+  margin-left: 39%;
+}
+
+.grid1 li:nth-child(3) h3::after {
+  margin-left: 45%;
+}
+
+.grid1 li:nth-child(1),
+.grid4 li:nth-child(1) {
+  background: gray;
+  grid-column: 1 / 6;
+}
+
+.grid1 li:nth-child(2),
+.grid4 li:nth-child(2) {
+  background: gray;
+  grid-column: 6 / 11;
+}
+
+.grid1 li:nth-child(3),
+.grid4 li:nth-child(3) {
+  background: gray;
+  grid-column: 11 / 18;
+}
+
+.grid2 li:nth-child(1) h3::after {
+  margin-left: 35%;
+}
+
+.grid2 li:nth-child(2) h3::after {
+  margin-left: 45%;
+}
+
+.grid2 li:nth-child(3) h3::after {
+  margin-left: 44%;
+}
+
+.grid2 li:nth-child(1) {
+  background: gray;
+  grid-column: 1 / 5;
+}
+
+.grid2 li:nth-child(2) {
+  background: gray;
+  grid-column: 5 / 12;
+}
+
+.grid2 li:nth-child(3) {
+  background: gray;
+  grid-column: 12 / 18;
+}
+
+.grid3 li:nth-child(1) {
+  background: gray;
+  grid-column: 1 / 10;
+}
+
+.grid3 li:nth-child(2) {
+  background: gray;
+  grid-column: 10 / 18;
+}
+
+.grid3 li:nth-child(1) h3::before,
+.grid3 li:nth-child(1) h3::after,
+.grid3 li:nth-child(2) h3::before,
+.grid3 li:nth-child(2) h3::after {
+  margin-left: 45%;
+}
+
+.grid4 li h3::before,
+.grid4 li h3::after {
+  margin-left: 40%;
+}
+
+.grid4 li:nth-child(3) h3::before,
+.grid4 li:nth-child(3) h3::after {
+  margin-left: 45%;
+}
+
+.portfolio-list ul li p {
   max-width: 60%;
 }
 
@@ -243,11 +348,10 @@ h2::after {
   width: 60px;
   height: 1px;
   background: #000;
-  margin: 2px;
 }
 
 .designs {
-  padding: 1em 0 2.5em 0;
+  padding: 1em 0 3em 0;
 }
 
 .designs-list {
@@ -255,8 +359,8 @@ h2::after {
 }
 
 .designs h2 {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .designs-list h3::before {
@@ -297,6 +401,14 @@ h2::after {
   grid-gap: 20px;
 }
 
+.form-grid {
+  margin-right: 20%;
+}
+
+.linkedin-grid {
+  margin: 1em 0 1em 40%;
+}
+
 .form input {
   display: block;
   width: 100%;
@@ -312,6 +424,7 @@ h2::after {
 .form textarea {
   display: block;
   width: 100%;
+  height: 8vh;
   border: 3px solid #8c1414;
   background: #f2cb05;
   padding: 7px 10px;
@@ -319,7 +432,34 @@ h2::after {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
+}
+
+.contact .not-show {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+.form button {
+  margin-left: 77%;
+  padding: 0.5em 10% 0.5em 10%;
+  font-size: 1em;
+}
+
+.linkedin-grid h3 {
+  margin-left: 17%;
+}
+
+.linkedin-grid a {
+  padding: 0.5em 20% 0.5em 20%;
+  font-size: 1em;
+}
+
+.linkedin-grid a img {
+  position: relative;
+  top: 0.2em;
+  margin-right: 2%;
 }
 
 .social-media ul {
@@ -337,6 +477,6 @@ footer p {
   font-weight: lighter;
   color: #fff;
   background: #697b6f;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 0 10px 13.3%;
+  margin-top: 10px;
 }
