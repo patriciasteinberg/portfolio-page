@@ -111,7 +111,7 @@ h1 {
 .home {
   padding: 1em 13% 2em 13%;
   height: 75vh;
-  background: url("../img/home-bg.png") no-repeat center;
+  background: url("../img/home-bg-2.png") no-repeat center;
   background-size: cover;
 }
 
@@ -206,7 +206,7 @@ h2::after {
 }
 
 .portfolio {
-  background: url("../img/portfolio-bg.png") no-repeat center;
+  background: url("../img/portfolio-bg-2.png") no-repeat center;
   background-size: cover;
   padding: 1em 0 2.5em 0;
 }
@@ -231,103 +231,103 @@ h2::after {
   padding: 10px;
 }
 
-.grid1,
-.grid2,
-.grid3,
-.grid4 {
+.grid1 a,
+.grid2 a,
+.grid3 a,
+.grid4 a {
   margin-bottom: 1em;
   text-align: center;
 }
 
-.grid1 li,
-.grid2 li,
-.grid3 li,
-.grid4 li {
+.grid1 a li,
+.grid2 a li,
+.grid3 a li,
+.grid4 a li {
   height: 30vh;
 }
 
-.grid1 li p,
-.grid2 li p {
+.grid1 a li p,
+.grid2 a li p {
   margin-left: 20%;
 }
 
-.grid1 li h3::after {
+.grid1 a li h3::after {
   margin-left: 39%;
 }
 
-.grid1 li:nth-child(3) h3::after {
+.grid1 a:nth-child(3) h3::after {
   margin-left: 45%;
 }
 
-.grid1 li:nth-child(1),
-.grid4 li:nth-child(1) {
+.grid1 a:nth-child(1),
+.grid4 a:nth-child(1) {
   background: gray;
   grid-column: 1 / 6;
 }
 
-.grid1 li:nth-child(2),
-.grid4 li:nth-child(2) {
+.grid1 a:nth-child(2),
+.grid4 a:nth-child(2) {
   background: gray;
   grid-column: 6 / 11;
 }
 
-.grid1 li:nth-child(3),
-.grid4 li:nth-child(3) {
+.grid1 a:nth-child(3),
+.grid4 a:nth-child(3) {
   background: gray;
   grid-column: 11 / 18;
 }
 
-.grid2 li:nth-child(1) h3::after {
+.grid2 a:nth-child(1) h3::after {
   margin-left: 35%;
 }
 
-.grid2 li:nth-child(2) h3::after {
+.grid2 a:nth-child(2) h3::after {
   margin-left: 45%;
 }
 
-.grid2 li:nth-child(3) h3::after {
+.grid2 a:nth-child(3) h3::after {
   margin-left: 44%;
 }
 
-.grid2 li:nth-child(1) {
+.grid2 a:nth-child(1) {
   background: gray;
   grid-column: 1 / 5;
 }
 
-.grid2 li:nth-child(2) {
+.grid2 a:nth-child(2) {
   background: gray;
   grid-column: 5 / 12;
 }
 
-.grid2 li:nth-child(3) {
+.grid2 a:nth-child(3) {
   background: gray;
   grid-column: 12 / 18;
 }
 
-.grid3 li:nth-child(1) {
+.grid3 a:nth-child(1) {
   background: gray;
   grid-column: 1 / 10;
 }
 
-.grid3 li:nth-child(2) {
+.grid3 a:nth-child(2) {
   background: gray;
   grid-column: 10 / 18;
 }
 
-.grid3 li:nth-child(1) h3::before,
-.grid3 li:nth-child(1) h3::after,
-.grid3 li:nth-child(2) h3::before,
-.grid3 li:nth-child(2) h3::after {
+.grid3 a:nth-child(1) h3::before,
+.grid3 a:nth-child(1) h3::after,
+.grid3 a:nth-child(2) h3::before,
+.grid3 a:nth-child(2) h3::after {
   margin-left: 45%;
 }
 
-.grid4 li h3::before,
-.grid4 li h3::after {
+.grid4 a li h3::before,
+.grid4 a li h3::after {
   margin-left: 40%;
 }
 
-.grid4 li:nth-child(3) h3::before,
-.grid4 li:nth-child(3) h3::after {
+.grid4 a:nth-child(3) h3::before,
+.grid4 a:nth-child(3) h3::after {
   margin-left: 45%;
 }
 
@@ -378,7 +378,7 @@ h2::after {
 }
 
 .contact {
-  background: url("../img/contact-bg.png") no-repeat center;
+  background: url("../img/contact-bg-2.png") no-repeat center;
   background-size: cover;
   padding: 1em 0 2.5em 0;
 }
