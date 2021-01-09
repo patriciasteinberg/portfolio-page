@@ -42,9 +42,6 @@ button {
   padding: 15px;
   background: #fff;
   border-radius: 7px;
-  margin-top: 3em;
-  margin-left: 45%;
-  margin-right: 47%;
 }
 
 .btn-white:hover {
@@ -266,7 +263,7 @@ h2::after {
 
 .grid1 a:nth-child(2),
 .grid4 a:nth-child(2) {
-  background: gray;
+  background: url("../img/test.png") no-repeat center;
   grid-column: 6 / 11;
 }
 
@@ -358,7 +355,6 @@ h2::after {
 .grid4 h3 {
   position: absolute;
   top: 0;
-  left: 180px;
   text-align: center;
 }
 
@@ -413,11 +409,6 @@ h2::after {
   height: 1px;
   background: #000;
   margin: 2px;
-}
-
-.designs .btn {
-  margin-left: 45%;
-  margin-right: 47%;
 }
 
 .designs-list h3 {
@@ -528,7 +519,17 @@ footer p {
   margin-top: 10px;
 }
 
-@media only screen and (min-width: 716px) (max-width: 935px) {
+.center {
+  width: 100%;
+}
+
+.button-center {
+  display: flex;
+  margin: 20px auto auto auto;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 716px) and (max-width: 935px) {
   .intro h1 {
     font-size: 3.5rem;
   }
@@ -558,13 +559,6 @@ footer p {
   .menu li a {
     display: block;
     padding: 5px;
-  }
-
-  .btn-white {
-    display: inline-block;
-    font-size: 1em;
-    margin-left: 40%;
-    margin-right: 0;
   }
 
   .designs .btn {
