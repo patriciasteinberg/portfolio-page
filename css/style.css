@@ -42,9 +42,6 @@ button {
   padding: 15px;
   background: #fff;
   border-radius: 7px;
-  margin-top: 3em;
-  margin-left: 45%;
-  margin-right: 47%;
 }
 
 .btn-white:hover {
@@ -235,7 +232,6 @@ h2::after {
 .grid2 a,
 .grid3 a,
 .grid4 a {
-  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -243,7 +239,7 @@ h2::after {
 .grid2 a li,
 .grid3 a li,
 .grid4 a li {
-  height: 30vh;
+  height: 23vh;
 }
 
 .grid1 a li p,
@@ -267,7 +263,7 @@ h2::after {
 
 .grid1 a:nth-child(2),
 .grid4 a:nth-child(2) {
-  background: gray;
+  background: url("../img/test.png") no-repeat center;
   grid-column: 6 / 11;
 }
 
@@ -331,6 +327,49 @@ h2::after {
   margin-left: 45%;
 }
 
+.grid1 img,
+.grid2 img {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  z-index: -1;
+}
+
+.grid3 img,
+.grid4 img {
+  position: absolute;
+  margin: 100px -8%;
+}
+
+.grid1 h3,
+.grid2 h3 {
+  z-index: 1;
+  margin-top: 1em;
+}
+
+.items .design {
+  position: relative;
+}
+
+.grid3 h3:nth-child(1),
+.grid4 h3 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.items:hover {
+  transform: scale(1);
+}
+
+.items:hover .hidden {
+  opacity: 1;
+}
+
 .portfolio-list ul li p {
   max-width: 60%;
 }
@@ -372,9 +411,8 @@ h2::after {
   margin: 2px;
 }
 
-.designs .btn {
-  margin-left: 45%;
-  margin-right: 47%;
+.designs-list h3 {
+  margin-top: 2.5em;
 }
 
 .contact {
@@ -479,4 +517,69 @@ footer p {
   background: #697b6f;
   padding: 10px 0 10px 13.3%;
   margin-top: 10px;
+}
+
+.center {
+  width: 100%;
+}
+
+.button-center {
+  display: flex;
+  margin: 20px auto auto auto;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 716px) and (max-width: 935px) {
+  .intro h1 {
+    font-size: 3.5rem;
+  }
+
+  .contact-area-grid {
+    max-width: 700px;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .home {
+    padding: 1em 5% 2em 8%;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 200;
+    padding: 15px;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 5px;
+  }
+
+  .designs .btn {
+    margin-left: 40%;
+  }
+
+  .contact-area-grid {
+    max-width: 610px;
+    grid-gap: 0px;
+  }
+
+  .form input {
+    padding: 7px 40px;
+  }
+
+  .form textarea {
+    padding: 7px 40px;
+  }
+
+  .form button {
+    margin-left: 96%;
+    padding: 0.5em 10% 0.5em 10%;
+  }
 }
